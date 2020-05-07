@@ -1,0 +1,37 @@
+Package: mapRandomForest
+Type: Package
+Title: Surface Water Statistical Estimation for the Mississippi Alluvial Plain
+Version: 0.1.0
+Authors@R: c(person("Steve", "Westenbroek", email = "smwesten@usgs.gov",
+                  role = c("aut", "cre")),
+           person("Brian", "Breaker", email = "Brian.K.Breaker@usace.army.mil",
+                  role = c("aut")),
+           person("Ben", "Dietsch", email = "bdietsch@usgs.gov",
+                  role = c("ctb")))
+Description: mapRandomForest is an R package that contains modified versions of code
+    originally written by Brian Breaker for use in estimating monthly baseflow and
+    streamflow for gaged and ungaged basins within the Mississippi Alluvial Plain
+    study area.
+License: CC0
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.0.2
+Depends: R (>= 3.5.0)
+Imports:
+  lubridate,
+  data.table,
+  readr,
+  velox,
+  magrittr,
+  sf,
+  foreach,
+  doParallel,
+  dataRetrieval,
+  ggplot2,
+  dplyr,
+  tidyr,
+  skimr
+Suggests: knitr,
+    rmarkdown,
+    roxygen2
+VignetteBuilder: knitr
